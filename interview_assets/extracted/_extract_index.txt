@@ -1,0 +1,12 @@
+interview_assets/extracted/slide_project_exp.png
+interview_assets/extracted/slide_travel_doc.png
+interview_assets/extracted/slide_nlu_discussion.png
+interview_assets/extracted/slide_nlu_stats.png
+interview_assets/extracted/slide_aidai_readme.png
+interview_assets/extracted/slide_itsc.png
+interview_assets/extracted/slide_intern_weekly.png
+interview_assets/extracted/slide_figma_meeting.png
+interview_assets/extracted/slide_hackathon.png
+interview_assets/extracted/slide_bev_log.png
+interview_assets/extracted/slide_weekly_cv.png
+interview_assets/extracted/slide_innovus_idea.png

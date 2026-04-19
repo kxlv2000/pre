@@ -1,0 +1,169 @@
+picks:
+- out: slide_project_exp
+  pdf: 新素材/项目经历.pdf
+  page_1based: 9
+  image_index_1based: 2
+  area: 921600
+  text_score: 2.5
+  combined: 158.6
+  snippet: "前视图叠加可视化 4D\x01⼤图训练增⼴可视化\x01"
+- out: slide_travel_doc
+  pdf: 新素材/Vertical AI research/旅行记忆/旅行记忆总文档.pdf
+  page_1based: 3
+  image_index_1based: 1
+  area: 6553600
+  text_score: 5.0
+  combined: 189.26
+  snippet: "3.2关键流程\x01 4.详细功能设计\x01 4.1触发机制\x01 ⽤⼾可以通过触控或语⾳指令发起旅⾏记录功能，包含被动触发（精准触发、模糊触发），主动触发\
+    \ 两类： ⽤⼾可以选择应⽤是否在后台运⾏，如果打开后台运⾏，应⽤退出后，仍然可以保持主动触发；如果 不开启应⽤后台运⾏，则应⽤推出后不主"
+- out: slide_nlu_discussion
+  pdf: 新素材/Vertical AI research/NLU模型训练上板/AI notes_ Discussion on Model Quantization,
+    Conversion and Data Provision on Apr 16, 2026.pdf
+  page_1based: 2
+  image_index_1based: 1
+  area: 6553600
+  text_score: 7.5
+  combined: 246.26
+  snippet: "本次会议主要围绕模型量化、模型转换以及数据提供等问题展开讨论，确定了量化处理⽅法、模型转 换任务分配和数据提供内容，内容如下： • 模型量化问题\
+    \ ◦ 量化平滑处理 ▪ 问题指出：章万哲指出直接复制\x01vision\x01进⾏量化，未做量化平滑，仅计算激活值校准，导致 量化结果有问题。 ▪"
+- out: slide_nlu_stats
+  pdf: 新素材/Vertical AI research/NLU模型训练上板/NLU 自动标注样本分布统计.pdf
+  page_1based: 1
+  image_index_1based: 2
+  area: 2608232
+  text_score: 5.0
+  combined: 202.97
+  snippet: "NLU \x01⾃动标注样本分布统计\x01 1.数据集概览\x01(N=938)\x01 训练集与验证集采⽤约\x019:1\x01的⽐例进⾏切分。\x01\
+    \ 2.意图分布对照表\x01(Intent\x01Distribution)\x01 该表反映了模型需要识别的操作类型及其在训练/验证集中的覆盖情况。\x01\
+    \ "
+- out: slide_aidai_readme
+  pdf: 新素材/Vertical AI research/Ai 代驾/AI代驾原型演示及Readme文档 2025年10月7日.pdf
+  page_1based: 1
+  image_index_1based: 2
+  area: 1466880
+  text_score: 2.5
+  combined: 150.79
+  snippet: "AI代驾原型演⽰及Readm e⽂档\x012025年10⽉7⽇\x01 会议主题：AI代驾原型演⽰\x01 会议时间：10⽉7号（周⼆）\x01\
+    14:49\x01-\x0114:53\x01（G M T+08）\x01 参会⼈：\x01 Bowen\x01QING \x01 智能会议纪要由\x01\
+    AI\x01⽣成，可能不准确，请谨慎甄别后使⽤\x01 总结 卿"
+- out: slide_itsc
+  pdf: 新素材/Paper submission Structured Runtime Safety Monitoring for Camera-Based
+    Driver Monitoring Systems/ITSC26_0759_MS.pdf
+  page_1based: 3
+  image_index_1based: 1
+  area: 1823600
+  text_score: 14.0
+  combined: 325.75
+  snippet: Fig. 1. Proposed DMS safety architecture Internally, a sliding-window filter
+    is applied over fixed time steps (Tick). If the median EAR with
+- out: slide_intern_weekly
+  pdf: 新素材/Horizontal AI application/我作为导师带领的实习生周会纪要，包含各种探索项目/AI notes_ 01-16 | RD3
+    26S Intern Weekly Meeting on Jan 16, 2026.pdf
+  page_1based: 4
+  image_index_1based: 2
+  area: 299466
+  text_score: 30.0
+  combined: 533.49
+  snippet: "• 本周⼯作与计划：本周部署派\x010.5\x01⽤的\x01 behavior\x01one\x01key，数据集训练约⼗⼏个⼩时 完成；后续考虑多种⽅法，如\x01\
+    VA\x01加\x01PPO、错 误处理等，探索机械臂抓取姿态。 基于基础模型的迭代优化控制策略流程图（来 ⾃共享）\x01 AI系统架构图（含VLA和VLM\
+    \ 模块"
+- out: slide_figma_meeting
+  pdf: 新素材/Horizontal AI application/PRD-UIUX文档比对工具/智能纪要：Figma工作流及AI应用会议 2026年3月30日.pdf
+  page_1based: 3
+  image_index_1based: 2
+  area: 1088628
+  text_score: 2.5
+  combined: 160.1
+  snippet: "◦ ⽹速影响：指出\x01Figm a\x01虽⽅便，但使⽤效果受⽹ 速影响。 • 项⽬⽰例：⻩⼀宇将提供⼀个低法规项⽬（⾮脱敏， 基本已完成）的相关内容供⼤家查看。\
+    \ • 代码与⽂件导出 ◦ CSS\x01代码：Figm a\x01可直接\x01copy\x01CSS\x01代码，但不确 定能否转成\x01J SON\x01\
+    ⽂件。卿"
+- out: slide_hackathon
+  pdf: 新素材/Horizontal AI application/获奖项目人才 365，晋升依据/《AI Hackathon大赛》051简历筛选.pdf
+  page_1based: 1
+  image_index_1based: 1
+  area: 416256
+  text_score: 5.0
+  combined: 186.45
+  snippet: "《AI\x01Hackathon⼤赛》051简历筛选\x01 ❗❗❗ 请 注 意 ： 作 业 提 交 时 ， 请 把 作 业 ⽂ 档 给 <\
+    \ 惠 州 市 德 赛 西 威 汽 ⻋ 电 ⼦ 股 份 有 限 公司> 开 通【可阅 读 】 权 限 请各参赛队伍在本模版的基础上，点击右上⻆： \x01\x01\
+    创建"
+- out: slide_bev_log
+  pdf: 新素材/Legacy CV perception project/行车底图预标模型实验记录.pdf
+  page_1based: 9
+  image_index_1based: 1
+  area: 1228800
+  text_score: 12.5
+  combined: 301.19
+  snippet: "⻋端统⼀评测⼯具结果,\x01由于是按box的⻆点距离@10px评测,\x01没有使⽤常⽤的2d\x01box\x01iou@0.5,\x01\
+    合理性 待商榷 obb模型\x01 seg模型\x01 其他实验 1.单独分出⻋道线数据并移除负样本训练⼀个独⽴权重没有明显分数提升"
+- out: slide_weekly_cv
+  pdf: 新素材/Legacy CV perception project/Weekly Progress Update - Bowen.pdf
+  page_1based: 13
+  image_index_1based: 1
+  area: 514560
+  text_score: 8.0
+  combined: 230.36
+  snippet: "Other\x01task\x01(Debug\x01preprocessing\x01pipeline\x01in\x01data\x01\
+    center)：\x01 Done:\x01 1.Set\x01up\x01internal\x01access\x01(aistudio\x01&\x01\
+    dolphin\x01schedualer)and\x01get\x01fam iliar\x01"
+- out: slide_innovus_idea
+  pdf: 新素材/Innovus capital 创业/想法.pdf
+  page_1based: 8
+  image_index_1based: 1
+  area: 3410784
+  text_score: 9.0
+  combined: 261.38
+  snippet: InnovusCapital领创资本 行业分析/竞争对手分析IndustryAnalysis BloomBergTerminal● 价格昂贵，每年每人定价$20,000美元
+    AlphaSense● 开户不方便，需要线上会议确定需求● 价格不透明● 主要针对企业用户(Corpora
+exports:
+- out: slide_project_exp
+  pdf: 新素材/项目经历.pdf
+  page: 9
+  image_index: 2
+- out: slide_travel_doc
+  pdf: 新素材/Vertical AI research/旅行记忆/旅行记忆总文档.pdf
+  page: 3
+  image_index: 1
+- out: slide_nlu_discussion
+  pdf: 新素材/Vertical AI research/NLU模型训练上板/AI notes_ Discussion on Model Quantization,
+    Conversion and Data Provision on Apr 16, 2026.pdf
+  page: 2
+  image_index: 1
+- out: slide_nlu_stats
+  pdf: 新素材/Vertical AI research/NLU模型训练上板/NLU 自动标注样本分布统计.pdf
+  page: 1
+  image_index: 2
+- out: slide_aidai_readme
+  pdf: 新素材/Vertical AI research/Ai 代驾/AI代驾原型演示及Readme文档 2025年10月7日.pdf
+  page: 1
+  image_index: 2
+- out: slide_itsc
+  pdf: 新素材/Paper submission Structured Runtime Safety Monitoring for Camera-Based
+    Driver Monitoring Systems/ITSC26_0759_MS.pdf
+  page: 3
+  image_index: 1
+- out: slide_intern_weekly
+  pdf: 新素材/Horizontal AI application/我作为导师带领的实习生周会纪要，包含各种探索项目/AI notes_ 01-16 | RD3
+    26S Intern Weekly Meeting on Jan 16, 2026.pdf
+  page: 4
+  image_index: 2
+- out: slide_figma_meeting
+  pdf: 新素材/Horizontal AI application/PRD-UIUX文档比对工具/智能纪要：Figma工作流及AI应用会议 2026年3月30日.pdf
+  page: 3
+  image_index: 2
+- out: slide_hackathon
+  pdf: 新素材/Horizontal AI application/获奖项目人才 365，晋升依据/《AI Hackathon大赛》051简历筛选.pdf
+  page: 1
+  image_index: 1
+- out: slide_bev_log
+  pdf: 新素材/Legacy CV perception project/行车底图预标模型实验记录.pdf
+  page: 9
+  image_index: 1
+- out: slide_weekly_cv
+  pdf: 新素材/Legacy CV perception project/Weekly Progress Update - Bowen.pdf
+  page: 13
+  image_index: 1
+- out: slide_innovus_idea
+  pdf: 新素材/Innovus capital 创业/想法.pdf
+  page: 8
+  image_index: 1

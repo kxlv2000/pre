@@ -1,0 +1,17 @@
+Senior Agent Researcher / Engineer (Senior / Staff)
+We are hiring a Senior / Staff-level Agent Researcher or Engineer to work on evaluation-driven, system-oriented Agent and Multi-Agent applications in complex real-world scenarios.
+What You Will Do
+Build and evolve evaluation-driven Agent systems, using evaluation as the primary mechanism to guide Agent behavior, iteration, and long-term improvement
+Design Agent systems that are observable, maintainable, and optimizable under real-world constraints
+Develop scalable and automated Agent evaluation infrastructure that can be reused across projects
+Continuously optimize Agent architectures, model choices, context, memory, and tool usage with clear performance–cost trade-offs
+Rapidly prototype Agent systems and demos using AI-native development practices (research × engineering × product validation)
+What We Look For
+Senior / Staff-level experience with Agent, LLM, or complex AI systems
+Strong ability to track and internalize advances in Agents, LLM / MLLM, multimodal models, multi-agent systems, and context engineering, and translate them into practical solutions
+Solid foundations in AI / ML and systems, with a deep understanding of models, inference, training, context, evaluation, and system architecture (beyond API-level usage)
+Experience with Agent evaluation frameworks, automated experimentation, or A/B testing
+A research-oriented mindset combined with strong engineering execution
+Nice to Have
+Publications, technical blogs, or open-source contributions
+Experience with automotive, chip, or intelligent cockpit systems (a plus, not a requirement)

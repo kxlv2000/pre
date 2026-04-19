@@ -1,0 +1,26 @@
+{
+  "source": "全量导出 interview_assets/extracted_all/ 后视觉审阅筛选；关键图复制为 sel_*.png；caption 经子 Agent 审阅后去掉内部来源措辞",
+  "figures": [
+    {"file": "sel_vlm_arch.png", "caption": "车机端多模态旅行记录：VLM、语音、DMS、导航多源输入与标题/总结/标签输出"},
+    {"file": "sel_vlm_user_flow.png", "caption": "语音触发后的 GUI/VUI 与行程记录、主动记忆、旅行地图等输出"},
+    {"file": "sel_nlu_quant.png", "caption": "座舱 BERT 量化：精度问题诊断、W8A16 与 NPU 落地分工"},
+    {"file": "sel_nlu_intent_table.png", "caption": "21 类意图在训练/验证集的样本量与占比"},
+    {"file": "sel_nlu_slot_table.png", "caption": "槽位键（predicate/object 等）分布，体现长尾与均衡需求"},
+    {"file": "sel_aidai_modules.png", "caption": "代驾系统模块划分：服务端、API 封装、虚拟传感器与车主/代驾员/车机三端 App"},
+    {"file": "sel_itsc_dms_arch.png", "caption": "DMS 混合架构：L1 人脸关键点与规则 + L2 VLM 语义推理及 3s 缓冲融合"},
+    {"file": "sel_agent_intern_dashboard.png", "caption": "内部 Agent 与效率项目看板：发票、飞书简报、M3 Agent 等重点条目与跟进表"},
+    {"file": "sel_clip_tagging_pipeline.png", "caption": "驾驶 Clip 多路标签流水线：地图/天气 API、VLM 场景理解、YOLO 检测与点云分支汇总入库"},
+    {"file": "sel_doc_figma_workflow.png", "caption": "AI 文档比对：Figma / Sketch / PDF 三条路线与横向/纵向比对定义"},
+    {"file": "sel_doc_audit_mindmap.png", "caption": "自动审计系统：四大需求与结构化数据、JSON 对齐子任务"},
+    {"file": "sel_hackathon_cover.png", "caption": "AI Hackathon：简历筛选与初评材料入口页"},
+    {"file": "sel_talent365_slide.png", "caption": "人才 365：方案亮点 / 六大模块与流程（摘自晋升材料）"},
+    {"file": "sel_innovus_proposal_exec.png", "caption": "商业提案 v3.13：投资摘要与核心数字（节选导出）"},
+    {"file": "sel_uec_trd_slide.png", "caption": "技术规划评审：课题背景、需求与市场机会（节选页）"},
+    {"file": "sel_master_sd_compare.png", "caption": "生成式路线对比：仅 Text2Img 与 Img2Img 引导下的可控性与可用性（毕设分享稿）"},
+    {"file": "sel_bev_train_curves.png", "caption": "BEV 预标模型：训练损失与验证集车道线/边界/停止线 AP 曲线"},
+    {"file": "sel_bev_eval_metrics.png", "caption": "底图预标模型：样本点 Recall / Precision / F1@10"},
+    {"file": "sel_lidar_camera_fusion.png", "caption": "鱼眼相机与 LiDAR 点云投影融合示意"},
+    {"file": "sel_innovus_equity_structure.png", "caption": "公司股权与管理架构：投资人、管理协议与外部服务监督"},
+    {"file": "sel_equity_research_sample.png", "caption": "结构化权益研报样例（Verizon 公开样例）"}
+  ]
+}

@@ -1,0 +1,148 @@
+# 面试网页内容清单：幻灯片叙事 + 从 PDF 抽取的配图（pypdf 内嵌图）
+# 路径均相对于项目根目录；拷贝整个 presentation 文件夹即可保持链接有效
+
+jd_keywords:
+  - evaluation_driven_agents
+  - multi_agent_tooling
+  - systems_inference_training
+  - automated_eval_infra
+  - automotive_cockpit_plus
+
+folder_jd_mapping:
+  "Vertical AI research":
+    jd: [evaluation_driven_agents, systems_inference_training, automotive_cockpit_plus]
+    highlights:
+      - 座舱多模态 VLM：数据挖掘、自动标注、全参 SFT、端侧 QNN 量化与算子适配
+      - Joint-BERT NLU：意图分类 + 工具槽位抽取，支撑「可调用工具」的交互闭环
+      - AI 代驾：VLMEvalKit 接入与评测向开发文档
+  "Horizontal AI application":
+    jd: [evaluation_driven_agents, automated_eval_infra, multi_agent_tooling]
+    highlights:
+      - 10+ 内部效率 Agent；企业级 Qwen3 / DeepSeek vLLM 工具链
+      - 导师带 10+ 实习生；周会推进多探索项目（文档比对、政策/论文研讨等）
+      - Feishu Aily / Hackathon 人才池简历打分等「评测驱动」落地
+  "Legacy CV perception project":
+    jd: [systems_inference_training, automotive_cockpit_plus]
+    highlights:
+      - BEV 车道/底图预标、流式裁剪增广、DeepSpeed 多卡流水线
+  "Innovus capital 创业":
+    jd: [evaluation_driven_agents, automated_eval_infra]
+    highlights:
+      - 本地 Qwen3 金融分析、舆情 + 量化 + 结构化研报自动生成流水线
+  "Paper submission Structured Runtime Safety Monitoring for Camera-Based Driver Monitoring Systems":
+    jd: [evaluation_driven_agents, automotive_cockpit_plus]
+    highlights:
+      - DMS 混合 YOLOv11–Qwen3-VL L1/L2 实时安全监控管线（论文 ITSC 2026）
+
+slides:
+  - id: cover
+    title: 封面
+    nav: 封面
+  - id: jd_fit
+    title: 岗位匹配
+    nav: 岗位匹配
+  - id: timeline
+    title: 履历总览
+    nav: 履历总览
+  - id: vertical_vlm
+    title: 纵向 · 座舱多模态 VLM
+    nav: 纵向·VLM
+  - id: vertical_nlu
+    title: 纵向 · NLU 与端侧 QNN
+    nav: 纵向·NLU
+  - id: vertical_aidai
+    title: 纵向 · AI 代驾与评测接入
+    nav: 纵向·代驾
+  - id: vertical_paper
+    title: 纵向 · DMS 安全监控论文
+    nav: 纵向·论文
+  - id: horizontal_agents
+    title: 横向 · 内部 Agent 与平台
+    nav: 横向·Agent
+  - id: horizontal_doc
+    title: 横向 · PRD / UI 协同与文档智能
+    nav: 横向·文档
+  - id: horizontal_hackathon
+    title: 横向 · Hackathon 与人才评测
+    nav: 横向·Hackathon
+  - id: legacy_cv
+    title: Legacy · 感知与 BEV 预标
+    nav: Legacy·CV
+  - id: innovus
+    title: 副业 · Innovus 金融 Agent 流水线
+    nav: Innovus
+  - id: closing
+    title: 总结
+    nav: 总结
+
+# 每项导出一张内嵌图：page / image_index 均为 1-based（与 PDF 页码习惯一致）
+pdf_image_exports:
+  - out: slide_project_exp
+    pdf: 新素材/项目经历.pdf
+    page: 1
+    image_index: 1
+  - out: slide_travel_doc
+    pdf: 新素材/Vertical AI research/旅行记忆/旅行记忆总文档.pdf
+    page: 3
+    image_index: 1
+  - out: slide_nlu_discussion
+    pdf: 新素材/Vertical AI research/NLU模型训练上板/AI notes_ Discussion on Model Quantization, Conversion and Data Provision on Apr 16, 2026.pdf
+    page: 1
+    image_index: 1
+  - out: slide_nlu_stats
+    pdf: 新素材/Vertical AI research/NLU模型训练上板/NLU 自动标注样本分布统计.pdf
+    page: 1
+    image_index: 1
+  - out: slide_aidai_readme
+    pdf: 新素材/Vertical AI research/Ai 代驾/AI代驾原型演示及Readme文档 2025年10月7日.pdf
+    page: 1
+    image_index: 1
+  - out: slide_itsc
+    pdf: 新素材/Paper submission Structured Runtime Safety Monitoring for Camera-Based Driver Monitoring Systems/ITSC26_0759_MS.pdf
+    page: 3
+    image_index: 1
+  - out: slide_intern_weekly
+    pdf: 新素材/Horizontal AI application/我作为导师带领的实习生周会纪要，包含各种探索项目/AI notes_ 01-16 | RD3 26S Intern Weekly Meeting on Jan 16, 2026.pdf
+    page: 1
+    image_index: 1
+  - out: slide_figma_meeting
+    pdf: 新素材/Horizontal AI application/PRD-UIUX文档比对工具/智能纪要：Figma工作流及AI应用会议 2026年3月30日.pdf
+    page: 1
+    image_index: 1
+  - out: slide_hackathon
+    pdf: 新素材/Horizontal AI application/获奖项目人才 365，晋升依据/《AI Hackathon大赛》051简历筛选.pdf
+    page: 1
+    image_index: 1
+  - out: slide_bev_log
+    pdf: 新素材/Legacy CV perception project/行车底图预标模型实验记录.pdf
+    page: 2
+    image_index: 1
+  - out: slide_weekly_cv
+    pdf: 新素材/Legacy CV perception project/Weekly Progress Update - Bowen.pdf
+    page: 3
+    image_index: 1
+  - out: slide_innovus_idea
+    pdf: 新素材/Innovus capital 创业/想法.pdf
+    page: 1
+    image_index: 1
+
+# 网页中「查看原始素材」相对链接（空格已编码）；与 pdf_image_exports 可独立维护
+source_links:
+  cv: "新素材/QING_Bowen_CV_LLM_0402.pdf"
+  job: "新素材/Job%20describe.txt"
+  project_exp: "新素材/%E9%A1%B9%E7%9B%AE%E7%BB%8F%E5%8E%86.pdf"
+  travel_zongdoc: "新素材/Vertical%20AI%20research/%E6%97%85%E8%A1%8C%E8%AE%B0%E5%BF%86/%E6%97%85%E8%A1%8C%E8%AE%B0%E5%BF%86%E6%80%BB%E6%96%87%E6%A1%A3.pdf"
+  nlu_discussion: "新素材/Vertical%20AI%20research/NLU%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E4%B8%8A%E6%9D%BF/AI%20notes_%20Discussion%20on%20Model%20Quantization%2C%20Conversion%20and%20Data%20Provision%20on%20Apr%2016%2C%202026.pdf"
+  nlu_stats: "新素材/Vertical%20AI%20research/NLU%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E4%B8%8A%E6%9D%BF/NLU%20%E8%87%AA%E5%8A%A8%E6%A0%87%E6%B3%A8%E6%A0%B7%E6%9C%AC%E5%88%86%E5%B8%83%E7%BB%9F%E8%AE%A1.pdf"
+  aidai_readme: "新素材/Vertical%20AI%20research/Ai%20%E4%BB%A3%E9%A9%BE/AI%E4%BB%A3%E9%A9%BE%E5%8E%9F%E5%9E%8B%E6%BC%94%E7%A4%BA%E5%8F%8AReadme%E6%96%87%E6%A1%A3%202025%E5%B9%B410%E6%9C%887%E6%97%A5.pdf"
+  aidai_vlmeval: "新素材/Vertical%20AI%20research/Ai%20%E4%BB%A3%E9%A9%BE/AI%20%E4%BB%A3%E9%A9%BE%E6%95%B0%E6%8D%AE%E9%9B%86%E6%8E%A5%E5%85%A5%20VLMEvalKit%20%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.pdf"
+  itsc_paper: "新素材/Paper%20submission%20Structured%20Runtime%20Safety%20Monitoring%20for%20Camera-Based%20Driver%20Monitoring%20Systems/ITSC26_0759_MS.pdf"
+  intern_weekly: "新素材/Horizontal%20AI%20application/%E6%88%91%E4%BD%9C%E4%B8%BA%E5%AF%BC%E5%B8%88%E5%B8%A6%E9%A2%86%E7%9A%84%E5%AE%9E%E4%B9%A0%E7%94%9F%E5%91%A8%E4%BC%9A%E7%BA%AA%E8%A6%81%EF%BC%8C%E5%8C%85%E5%90%AB%E5%90%84%E7%A7%8D%E6%8E%A2%E7%B4%A2%E9%A1%B9%E7%9B%AE/AI%20notes_%2001-16%20%7C%20RD3%2026S%20Intern%20Weekly%20Meeting%20on%20Jan%2016%2C%202026.pdf"
+  prd_compare: "新素材/Horizontal%20AI%20application/PRD-UIUX%E6%96%87%E6%A1%A3%E6%AF%94%E5%AF%B9%E5%B7%A5%E5%85%B7/%E6%99%BA%E8%83%BD%E7%BA%AA%E8%A6%81%EF%BC%9AAI%E6%96%87%E6%A1%A3%E6%AF%94%E5%AF%B9_%E5%86%85%E9%83%A8%E5%9B%A2%E9%98%9F%E4%BA%A4%E6%B5%81%202026%E5%B9%B43%E6%9C%8823%E6%97%A5.pdf"
+  hackathon_pdf: "新素材/Horizontal%20AI%20application/%E8%8E%B7%E5%A5%96%E9%A1%B9%E7%9B%AE%E4%BA%BA%E6%89%8D%20365%EF%BC%8C%E6%99%8B%E5%8D%87%E4%BE%9D%E6%8D%AE/%E3%80%8AAI%20Hackathon%E5%A4%A7%E8%B5%9B%E3%80%8B051%E7%AE%80%E5%8E%86%E7%AD%9B%E9%80%89.pdf"
+  talent365_pptx: "新素材/Horizontal%20AI%20application/%E8%8E%B7%E5%A5%96%E9%A1%B9%E7%9B%AE%E4%BA%BA%E6%89%8D%20365%EF%BC%8C%E6%99%8B%E5%8D%87%E4%BE%9D%E6%8D%AE/022%2B%E4%BA%BA%E6%89%8D365%2B%E5%8D%BF%E5%8D%9A%E6%96%87%200908.pptx"
+  bev_log: "新素材/Legacy%20CV%20perception%20project/%E8%A1%8C%E8%BD%A6%E5%BA%95%E5%9B%BE%E9%A2%84%E6%A0%87%E6%A8%A1%E5%9E%8B%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95.pdf"
+  weekly_cv: "新素材/Legacy%20CV%20perception%20project/Weekly%20Progress%20Update%20-%20Bowen.pdf"
+  innovus_idea: "新素材/Innovus%20capital%20%E5%88%9B%E4%B8%9A/%E6%83%B3%E6%B3%95.pdf"
+  promotion_statement: "新素材/Bowen%E2%80%99s%20Promotion%20Statement%20.pdf"
+  lumen_repo: "https://github.com/boots-coder/lumen"

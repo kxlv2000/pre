@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>卿博文 · 项目与技术概览</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <nav class="nav-dots" id="navDots"></nav>
+
+  <div class="slides-container" id="slidesContainer">
+
+    <!-- Slide 0: Cover -->
+    <section class="slide slide-cover active" data-index="0">
+      <div class="cover-content">
+        <div class="cover-badge">Senior / Staff Agent Researcher &middot; Engineer</div>
+        <h1 class="cover-title">项目与技术概览</h1>
+        <p class="cover-subtitle">Agent 与多模态系统 &middot; 评测与工程闭环 &middot; 座舱与端侧落地</p>
+        <div class="cover-divider"></div>
+        <p class="cover-name">卿博文 QING Bowen</p>
+        <p class="cover-date">新加坡 &middot; LLM &amp; CV Senior Engineer</p>
+        <div class="cover-hint">
+          <span class="arrow-right"></span>
+          <span>按 &rarr; 键或左滑继续</span>
+        </div>
+        <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+          <a class="doc-link" href="新素材/QING_Bowen_CV_LLM_0402.pdf" target="_blank" rel="noopener">简历 PDF</a>
+          <a class="doc-link" href="新素材/Job%20describe.txt" target="_blank" rel="noopener">岗位说明</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 1: JD fit -->
+    <section class="slide" data-index="1">
+      <div class="slide-inner">
+        <h2 class="section-title">岗位匹配</h2>
+        <p class="section-desc">Senior / Staff Agent Researcher / Engineer：评测驱动、系统级 Agent、多智能体、复杂场景下的工程落地</p>
+
+        <table class="data-table jd-matrix" style="margin-bottom:24px;">
+          <thead>
+            <tr><th>能力维度</th><th>实践摘要</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>以评测驱动迭代</td><td>NLU / QNN 对齐评测、VLM 与 DMS 论文管线、内部 Agent 与 Aily / Hackathon 筛选流程</td></tr>
+            <tr><td>可观测、可维护、可优化</td><td>企业级 vLLM 工具链、GPU 运维与采购、周会/纪要沉淀、Docker / 全栈交付</td></tr>
+            <tr><td>自动化评测基础设施</td><td>VLMEvalKit 接入文档、座舱数据闭环、多方向探索项目的节奏化复盘</td></tr>
+            <tr><td>模型 / 推理 / 工具 / 成本</td><td>Qwen3-VL QNN W8A16、Joint-BERT 工具槽位、DeepSeek / Qwen3 大模型服务选型</td></tr>
+            <tr><td>汽车 / 芯片 / 座舱</td><td>舱内 DMS ITSC 论文、行车 BEV 预标、端侧 QNN 8797/8295 适配</td></tr>
+            <tr><td>学术与校企课题</td><td>硕士毕设（Diffusion / ControlNet 异常数据增强）、校企生成式世界模型（双核架构、验收指标与分工）</td></tr>
+          </tbody>
+        </table>
+
+        <div class="result-cards">
+          <div class="result-card accent"><div class="result-value">Agent</div><div class="result-label">工具调用与多轮交互</div></div>
+          <div class="result-card"><div class="result-value">Eval</div><div class="result-label">基准 / 对齐 / 业务指标</div></div>
+          <div class="result-card"><div class="result-value">Systems</div><div class="result-label">训练 &rarr; 部署全链路</div></div>
+        </div>
+
+        <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:10px;">
+          <a class="doc-link" href="新素材/Job%20describe.txt" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>Job describe.txt</a>
+          <a class="doc-link" href="新素材/QING_Bowen_CV_LLM_0402.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>简历 PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2: T 型履历总览（横向一条 + 纵向一列，点击进入详情） -->
+    <section class="slide" data-index="2">
+      <div class="slide-inner">
+        <h2 class="section-title">履历总览</h2>
+        <p class="section-desc">Desay SV（2024&ndash;至今）：详情页顺序为 <strong>纵向</strong>（座舱主线）&rarr; <strong>横向</strong>（效率与创业侧）&rarr; <strong>历史项目</strong>（毕设、校企课题与早期 BEV）。</p>
+
+        <div class="resume-t">
+          <p class="t-cross-label">横向 · 广度（效率 Agent、文档智能、人才与创业）</p>
+          <div class="t-cross" role="group" aria-label="横向项目">
+            <button type="button" class="t-project-card" data-slide="7" style="flex:1 1 180px;max-width:240px;">
+              <div class="tp-row"><span class="t-tag side">横向</span><div class="tp-title">内部 Agent 与平台</div></div>
+              <p class="tp-desc">带队实习生，多业务线 Agent 与 vLLM / GPU</p>
+            </button>
+            <button type="button" class="t-project-card" data-slide="8" style="flex:1 1 180px;max-width:240px;">
+              <div class="tp-row"><span class="t-tag side">横向</span><div class="tp-title">PRD / UI 与文档智能</div></div>
+              <p class="tp-desc">Figma 工作流、AI 文档比对与自动审计</p>
+            </button>
+            <button type="button" class="t-project-card" data-slide="9" style="flex:1 1 180px;max-width:240px;">
+              <div class="tp-row"><span class="t-tag side">横向</span><div class="tp-title">Hackathon 与人才 365</div></div>
+              <p class="tp-desc">简历筛选、人才池匹配与晋升材料</p>
+            </button>
+            <button type="button" class="t-project-card" data-slide="10" style="flex:1 1 180px;max-width:240px;">
+              <div class="tp-row"><span class="t-tag side">横向</span><div class="tp-title">Innovus Capital</div></div>
+              <p class="tp-desc">AI 研报、商业提案与股权治理</p>
+            </button>
+          </div>
+
+          <div class="resume-t-stem-wrap">
+            <p class="t-stem-label">纵向 · 深度（当前座舱 / 模型主线）</p>
+            <div class="t-stem">
+              <button type="button" class="t-project-card" data-slide="3">
+                <div class="tp-row"><span class="t-tag main">纵向</span><div class="tp-title">座舱多模态 VLM</div></div>
+                <p class="tp-desc">旅行记忆、数据闭环与端侧 QNN</p>
+              </button>
+              <button type="button" class="t-project-card" data-slide="4">
+                <div class="tp-row"><span class="t-tag main">纵向</span><div class="tp-title">Joint-BERT NLU 与 QNN</div></div>
+                <p class="tp-desc">意图、槽位、量化与分布统计</p>
+              </button>
+              <button type="button" class="t-project-card" data-slide="5">
+                <div class="tp-row"><span class="t-tag main">纵向</span><div class="tp-title">AI 代驾与 VLMEvalKit</div></div>
+                <p class="tp-desc">系统模块与评测接入工程化</p>
+              </button>
+              <button type="button" class="t-project-card" data-slide="6">
+                <div class="tp-row"><span class="t-tag main">纵向</span><div class="tp-title">DMS 安全监控（ITSC 2026）</div></div>
+                <p class="tp-desc">L1/L2 混合与 VLM 语义层</p>
+              </button>
+            </div>
+          </div>
+
+          <div class="resume-history-wrap">
+            <p class="t-history-label">历史项目（与当前座舱岗位弱相关）</p>
+            <div class="t-history" role="group" aria-label="历史项目">
+              <button type="button" class="t-project-card" data-slide="11" style="flex:1 1 200px;max-width:280px;">
+                <div class="tp-row"><span class="t-tag main">毕设</span><div class="tp-title">硕士毕设（NTU）</div></div>
+                <p class="tp-desc">AIGC 增强自动驾驶异常数据（Diffusion / ControlNet）</p>
+              </button>
+              <button type="button" class="t-project-card" data-slide="12" style="flex:1 1 200px;max-width:280px;">
+                <div class="tp-row"><span class="t-tag main">合作</span><div class="tp-title">校企 · 生成式世界模型</div></div>
+                <p class="tp-desc">双核架构、验收指标与 NTU/中大分工</p>
+              </button>
+              <button type="button" class="t-project-card" data-slide="13" style="flex:1 1 200px;max-width:280px;">
+                <div class="tp-row"><span class="t-tag legacy">Legacy</span><div class="tp-title">BEV 预标与感知</div></div>
+                <p class="tp-desc">底图实验、训练曲线与多传感器融合</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:20px;text-align:center;">
+          <a class="doc-link" href="新素材/项目经历.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>项目经历汇总 PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 3: Vertical VLM -->
+    <section class="slide slide-readable-media" data-index="3">
+      <div class="slide-inner">
+        <h2 class="section-title">纵向：座舱多模态 VLM</h2>
+        <span class="section-badge">旅行记忆 &middot; 代驾场景 &middot; 端侧约束</span>
+
+        <div class="two-col">
+          <div class="col-left">
+            <h3>技术要点</h3>
+            <ul class="feature-list">
+              <li><strong>数据挖掘</strong>：本地 <strong>Qwen2.5-VL:32B</strong> 融合 <strong>高德 Amap API</strong> 与 <strong>YOLOv8</strong>，对驾驶视频做场景理解，筛出<strong>长尾路况</strong>、<strong>异形物体</strong>与可讲性高的片段，降低人工翻片成本。</li>
+              <li><strong>自动标注</strong>：调用 <strong>OpenAI / Gemini</strong> 为旅行/行程片段生成 <strong>caption</strong> 与标签，形成弱监督语料，与车机业务字段对齐后再人工抽检。</li>
+              <li><strong>监督微调</strong>：在清洗后的多模态语料上做 <strong>全参 SFT</strong>，主干为 <strong>Qwen2.5-VL:3B</strong>，兼顾座舱响应时延与效果；代驾向需求单独积累 <strong>衣着 / 异常行为 / 遗失物</strong> 等细粒度检测样本并迭代。</li>
+              <li><strong>端侧部署</strong>：<strong>Qwen3-VL:2B</strong> 走 <strong>W8A16 QNN</strong> 量化，针对 <strong>8797 / 8295</strong> 做 <strong>算子适配</strong>与<strong>内存占用</strong>裁剪，与产品共同约束 <strong>帧率、首 token 时延</strong> 与<strong>功耗</strong>。</li>
+              <li><strong>多源输入</strong>：架构上对齐 <strong>语音 VUI</strong>、<strong>DMS</strong>、<strong>导航</strong> 与视觉理解，输出结构化 <strong>标题 / 总结 / 标签</strong>，便于座舱服务编排与后续检索。</li>
+            </ul>
+            <h3>系统价值</h3>
+            <ul class="feature-list">
+              <li>在座舱内跑通 <strong>采集 &rarr; 自动标注 &rarr; SFT &rarr; QNN 部署</strong> 的闭环，同一套方法论可复用到<strong>旅行记忆</strong>与<strong>代驾安全</strong>等多条产品线。</li>
+            </ul>
+          </div>
+          <div class="col-right">
+            <div class="readable-figure-grid">
+              <figure class="figure-block">
+                <img src="interview_assets/selected/sel_vlm_arch.png" alt="车机 VLM 数据流架构" class="slide-image readable-img" />
+                <figcaption class="figure-caption">车机端多模态旅行记录：VLM、语音、DMS、导航多源输入与标题/总结/标签输出</figcaption>
+              </figure>
+              <figure class="figure-block">
+                <img src="interview_assets/selected/sel_vlm_user_flow.png" alt="语音触发旅行记录产品流程" class="slide-image readable-img" />
+                <figcaption class="figure-caption">语音触发后的 GUI/VUI 与行程记录、主动记忆、旅行地图等输出</figcaption>
+              </figure>
+            </div>
+            <a class="doc-link" href="新素材/Vertical%20AI%20research/%E6%97%85%E8%A1%8C%E8%AE%B0%E5%BF%86/%E6%97%85%E8%A1%8C%E8%AE%B0%E5%BF%86%E6%80%BB%E6%96%87%E6%A1%A3.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>旅行记忆总文档.pdf</a>
+          </div>
+        </div>
+
+        <div class="result-cards">
+          <div class="result-card"><div class="result-value">VLM</div><div class="result-label">数据 + 微调</div></div>
+          <div class="result-card accent"><div class="result-value">QNN</div><div class="result-label">端侧量化交付</div></div>
+          <div class="result-card"><div class="result-value">座舱</div><div class="result-label">场景理解</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 4: NLU -->
+    <section class="slide" data-index="4">
+      <div class="slide-inner">
+        <h2 class="section-title">纵向：NLU 与端侧 QNN</h2>
+        <span class="section-badge">意图 &middot; 槽位 = 工具调用结构</span>
+
+        <div class="two-col">
+          <div class="col-left">
+            <h3>技术要点</h3>
+            <ul class="feature-list">
+              <li><strong>Joint-BERT</strong> 车端模型：同时完成 <strong>乘客意图分类</strong>（多类意图）与 <strong>工具调用槽位</strong>（predicate / object 等）抽取，为语音助手提供可执行的<strong>结构化意图</strong>。</li>
+              <li><strong>训练与对齐</strong>：<strong>PyTorch</strong> 训练脚本、离线精度评估，再导出 <strong>ONNX</strong> 走编译与 <strong>QNN</strong> 上板；纪要中沉淀 <strong>W8A16</strong> 与<strong>敏感算子</strong>取舍、<strong>量化前后对齐评测</strong>（意图 / 槽位 F1）。</li>
+              <li><strong>数据闭环</strong>：<strong>自动标注</strong>产线持续喂数；用 <strong>NLU 样本分布统计</strong> 看各类意图与槽位键的<strong>长尾</strong>，驱动<strong>过采样</strong>、<strong>难例挖掘</strong>与<strong>词典 / 规则</strong>补丁。</li>
+              <li><strong>工程注意点</strong>：<strong>batch 布局</strong>、<strong>最大序列长度</strong>、<strong>特殊 token</strong> 与车机唤醒词并存时的<strong>冲突消解</strong>；上线前固定随机种子与<strong>回归测试集</strong>防回归。</li>
+            </ul>
+            <h3>系统价值</h3>
+            <ul class="feature-list">
+              <li>提供<strong>可部署、可测、可量化对齐</strong>的 NLU 底座，把上层 <strong>Agent / tool use</strong> 从「能 demo」推到「<strong>车载稳定接口</strong>」。</li>
+            </ul>
+          </div>
+          <div class="col-right">
+            <figure class="figure-block">
+              <img src="interview_assets/selected/sel_nlu_quant.png" alt="BERT 量化精度分析与 W8A16 方案" class="slide-image" />
+              <figcaption class="figure-caption">座舱 BERT 量化：精度问题诊断、W8A16 与 NPU 落地分工</figcaption>
+            </figure>
+            <div class="figure-grid-2" style="margin-top:10px;">
+              <figure class="figure-block">
+                <img src="interview_assets/selected/sel_nlu_intent_table.png" alt="意图分布统计表" class="slide-image" />
+                <figcaption class="figure-caption">21 类意图在训练/验证集的样本量与占比</figcaption>
+              </figure>
+              <figure class="figure-block">
+                <img src="interview_assets/selected/sel_nlu_slot_table.png" alt="槽位键分布统计表" class="slide-image" />
+                <figcaption class="figure-caption">槽位键（predicate/object 等）分布，体现长尾与均衡需求</figcaption>
+              </figure>
+            </div>
+            <div class="doc-links-group">
+              <a class="doc-link" href="新素材/Vertical%20AI%20research/NLU%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E4%B8%8A%E6%9D%BF/AI%20notes_%20Discussion%20on%20Model%20Quantization%2C%20Conversion%20and%20Data%20Provision%20on%20Apr%2016%2C%202026.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>量化与数据纪要</a>
+              <a class="doc-link" href="新素材/Vertical%20AI%20research/NLU%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E4%B8%8A%E6%9D%BF/NLU%20%E8%87%AA%E5%8A%A8%E6%A0%87%E6%B3%A8%E6%A0%B7%E6%9C%AC%E5%88%86%E5%B8%83%E7%BB%9F%E8%AE%A1.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>样本分布统计</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 5: AI 代驾 -->
+    <section class="slide" data-index="5">
+      <div class="slide-inner">
+        <h2 class="section-title">纵向：AI 代驾与评测接入</h2>
+        <span class="section-badge">VLMEvalKit &middot; 原型与文档</span>
+
+        <div class="two-col">
+          <div class="col-left">
+            <h3>技术要点</h3>
+            <ul class="feature-list">
+              <li><strong>系统拆分</strong>：原型文档将代驾拆为 <strong>云端推理服务</strong>、<strong>API 网关</strong>、<strong>虚拟传感器 / 数字孪生</strong> 与 <strong>车主 / 代驾员 / 车机</strong> 三端 App，明确<strong>鉴权、会话与消息通道</strong>。</li>
+              <li><strong>多模态输入</strong>：路侧与车内视频流、语音指令与车况信号进入统一<strong>特征与时序对齐</strong>模块，便于后续接入座舱 VLM 能力复用。</li>
+              <li><strong>VLMEvalKit</strong>：按开发文档完成 <strong>数据集注册</strong>、<strong>推理脚本适配</strong> 与 <strong>指标对齐</strong>（含<strong>批大小</strong>、<strong>tokenizer</strong>、<strong>图像分辨率</strong> 约定），输出可给测试同学直接跑的<strong>评测命令与配置</strong>。</li>
+              <li><strong>交付物</strong>：<strong>README</strong> 中的环境变量、依赖版本、样例请求与<strong>已知限制</strong>，降低跨团队接手成本。</li>
+            </ul>
+            <h3>系统价值</h3>
+            <ul class="feature-list">
+              <li>把「接评测」从一次性脚本变成<strong>可维护的评测入口</strong>，与座舱 <strong>VLM 数据闭环</strong>、<strong>论文实验</strong>共用同一套<strong>基准思维</strong>。</li>
+            </ul>
+          </div>
+          <div class="col-right">
+            <figure class="figure-block">
+              <img src="interview_assets/selected/sel_aidai_modules.png" alt="代驾系统核心模块与应用端划分" class="slide-image" />
+              <figcaption class="figure-caption">代驾系统模块划分：服务端、API 封装、虚拟传感器与车主/代驾员/车机三端 App</figcaption>
+            </figure>
+            <div class="doc-links-group">
+              <a class="doc-link" href="新素材/Vertical%20AI%20research/Ai%20%E4%BB%A3%E9%A9%BE/AI%E4%BB%A3%E9%A9%BE%E5%8E%9F%E5%9E%8B%E6%BC%94%E7%A4%BA%E5%8F%8AReadme%E6%96%87%E6%A1%A3%202025%E5%B9%B410%E6%9C%887%E6%97%A5.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>原型与 Readme</a>
+              <a class="doc-link" href="新素材/Vertical%20AI%20research/Ai%20%E4%BB%A3%E9%A9%BE/AI%20%E4%BB%A3%E9%A9%BE%E6%95%B0%E6%8D%AE%E9%9B%86%E6%8E%A5%E5%85%A5%20VLMEvalKit%20%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>VLMEvalKit 接入文档</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 6: Paper -->
+    <section class="slide" data-index="6">
+      <div class="slide-inner">
+        <h2 class="section-title">纵向：DMS 安全监控（ITSC 2026）</h2>
+        <span class="section-badge">混合 YOLOv11 &times; Qwen3-VL &middot; 实时性</span>
+
+        <div class="two-col">
+          <div class="col-left">
+            <h3>技术要点</h3>
+            <ul class="feature-list">
+              <li><strong>混合架构</strong>：<strong>L1</strong> 侧用 <strong>YOLOv11</strong> 级检测器做人脸框、关键点与简单规则，<strong>高帧率</strong>、低算力；<strong>L2</strong> 侧用 <strong>Qwen3-VL</strong> 做<strong>语义推理</strong>（疲劳、分心、危险动作等），<strong>低频触发</strong>。</li>
+              <li><strong>时空融合</strong>：两路结果经 <strong>时间缓冲（如 3s 窗口）</strong> 与<strong>置信度加权</strong>融合，策略上<strong>偏保守</strong>（宁可多提醒），并记录<strong>可解释标签</strong>供安全审计。</li>
+              <li><strong>指标</strong>：在 <strong>YawDD</strong> 等公开材料口径下，整体准确率约 <strong>92.16%</strong>，端到端延迟约 <strong>33ms</strong> 量级，满足<strong>实时 DMS</strong> 场景。</li>
+              <li><strong>论文向工作</strong>：问题形式化、对比<strong>纯视觉</strong>与<strong>视觉-语言</strong>分支、消融与失败案例分析，对接 <strong>ITSC 2026</strong> 投稿流程。</li>
+            </ul>
+            <h3>系统价值</h3>
+            <ul class="feature-list">
+              <li>把<strong>安全关键</strong>场景拆成<strong>可证明的层级管线</strong>：底层可靠检测 + 上层语义补充，便于车规评审与后续<strong>OTA 迭代</strong>。</li>
+            </ul>
+          </div>
+          <div class="col-right">
+            <figure class="figure-block">
+              <img src="interview_assets/selected/sel_itsc_dms_arch.png" alt="DMS L1 L2 混合架构图" class="slide-image" />
+              <figcaption class="figure-caption">DMS 混合架构：L1 人脸关键点与规则 + L2 VLM 语义推理及 3s 缓冲融合</figcaption>
+            </figure>
+            <div class="doc-links-group">
+              <a class="doc-link" href="新素材/Paper%20submission%20Structured%20Runtime%20Safety%20Monitoring%20for%20Camera-Based%20Driver%20Monitoring%20Systems/ITSC26_0759_MS.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>ITSC26 稿件 PDF</a>
+              <a class="doc-link" href="新素材/Paper submission Structured Runtime Safety Monitoring for Camera-Based Driver Monitoring Systems/智能纪要：Discussion on IEEE paper 2026年2月5日.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>IEEE 论文讨论纪要</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-cards">
+          <div class="result-card accent"><div class="result-value">92.16%</div><div class="result-label">YawDD 准确率</div></div>
+          <div class="result-card"><div class="result-value">33ms</div><div class="result-label">实时量级</div></div>
+          <div class="result-card"><div class="result-value">ITSC</div><div class="result-label">2026 投稿</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 7: 横向 · 内部 Agent -->
+    <section class="slide" data-index="7">
+      <div class="slide-inner">
+        <h2 class="section-title">横向：内部 Agent 与平台</h2>
+        <span class="section-badge">导师 / 技术负责人 &middot; <span class="stat-hl">10+</span> 实习生并行课题</span>
+
+        <p class="lead-strip">角色：RD3 方向 <strong>导师 + 技术负责人</strong>，统一节奏（周会 / AI notes）、拆解课题、把控评测与交付；底座为 <span class="stat-hl">Qwen3:30B-A3B</span>、<span class="stat-hl">DeepSeek-R1:671B</span>（vLLM）及公司 GPU 资源协调。</p>
+        <div class="kw-strip">
+          <span class="kw-tag">vLLM</span>
+          <span class="kw-tag">Feishu Aily</span>
+          <span class="kw-tag">OpenClaw</span>
+          <span class="kw-tag">GRPO / GB10</span>
+          <span class="kw-tag">SQLite / Docker</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-left">
+            <h3>实习生课题铺平</h3>
+            <div class="intern-grid">
+              <div class="intern-card"><strong>发票处理系统</strong><br />SAP 术语与字段逻辑、税码与供应商号校验；待财务接口与 AB 类流程调试。</div>
+              <div class="intern-card"><strong>飞书工作简报机器人</strong><br />群 / 云文档 / 邮件多源；召回与准确率指标；私聊、群聊与纪要测试集建设；规划 Agent 规划与 RL。</div>
+              <div class="intern-card"><strong>M3 Agent 调研</strong><br />视频流长期记忆与磁盘；人脸与声纹匹配；座舱 / 旅行记忆 / 家居场景。</div>
+              <div class="intern-card"><strong>AI 视频剪辑算法支持</strong><br />约 <span class="stat-hl">200GB</span> 视频处理；GPT API 自动标注与文案。</div>
+              <div class="intern-card"><strong>机械臂插拔赛</strong><br />Behavior-1K 训练部署与文献调研。</div>
+              <div class="intern-card"><strong>GB10 服务器</strong><br />Blackwell VLM 推理；Docker 镜像与源码改造。</div>
+              <div class="intern-card"><strong>PM 项目管理系统</strong><br />协作工具重构；SQLite 集成。</div>
+              <div class="intern-card"><strong>DSA 每日 AI 新闻</strong><br />需求分析与技术方案。</div>
+            </div>
+          </div>
+          <div class="col-right">
+            <figure class="figure-block">
+              <img src="interview_assets/selected/sel_agent_intern_dashboard.png" alt="RD3 实习生周会重点项目看板" class="slide-image" />
+              <figcaption class="figure-caption">周会看板：重点项目卡片 +「项目跟进」表（状态：已完成 / 进行中 / 重构中等）</figcaption>
+            </figure>
+            <figure class="figure-block" style="margin-top:12px;">
+              <img src="interview_assets/selected/sel_clip_tagging_pipeline.png" alt="Clip 多路标签与数据库存储流水线" class="slide-image" />
+              <figcaption class="figure-caption">驾驶数据 Clip：多路标签汇总与入库流水线（与座舱数据闭环一致）</figcaption>
+            </figure>
+            <div class="doc-links-group">
+              <a class="doc-link" href="新素材/Horizontal%20AI%20application/%E6%88%91%E4%BD%9C%E4%B8%BA%E5%AF%BC%E5%B8%88%E5%B8%A6%E9%A2%86%E7%9A%84%E5%AE%9E%E4%B9%A0%E7%94%9F%E5%91%A8%E4%BC%9A%E7%BA%AA%E8%A6%81%EF%BC%8C%E5%8C%85%E5%90%AB%E5%90%84%E7%A7%8D%E6%8E%A2%E7%B4%A2%E9%A1%B9%E7%9B%AE/AI%20notes_%2001-16%20%7C%20RD3%2026S%20Intern%20Weekly%20Meeting%20on%20Jan%2016%2C%202026.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>实习生周会 AI notes</a>
+              <a class="doc-link" href="新素材/项目经历.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>项目经历.pdf</a>
+              <a class="doc-link" href="https://github.com/boots-coder/lumen" target="_blank" rel="noopener"><span class="link-icon">&#128279;</span>Lumen Code Agent（GitHub）</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 8: 横向 · 文档 -->
+    <section class="slide" data-index="8">
+      <div class="slide-inner">
+        <h2 class="section-title">横向：PRD / UI &amp; 文档智能</h2>
+        <span class="section-badge">设计协同 &middot; 文档比对</span>
+
+        <div class="two-col">
+          <div class="col-left">
+            <h3>技术要点</h3>
+            <ul class="feature-list">
+              <li>Figma 优先路径：CSS 导出、MCP、云端协作，对比 Sketch 与 PDF OCR 路线</li>
+              <li>横向差异（多市场功能对比）与纵向迭代（版本演进）双维度文档比对需求</li>
+              <li>自动审计：PRD/UE 对齐、版本更新识别与 UEUI 一致性，拆解为结构化 JSON 比对任务</li>
+            </ul>
+            <h3>系统价值</h3>
+            <ul class="feature-list">
+              <li><strong>设计资产 &times; LLM</strong> 的可复用工作流与可落地输出（差异表、看板）</li>
+            </ul>
+          </div>
+          <div class="col-right">
+            <div class="figure-grid-2">
+              <figure class="figure-block">
+                <img src="interview_assets/selected/sel_doc_figma_workflow.png" alt="AI 文档比对工作流方案" class="slide-image" />
+                <figcaption class="figure-caption">AI 文档比对：Figma / Sketch / PDF 三条路线与横向/纵向比对定义</figcaption>
+              </figure>
+              <figure class="figure-block">
+                <img src="interview_assets/selected/sel_doc_audit_mindmap.png" alt="自动审计系统需求拆解" class="slide-image" />
+                <figcaption class="figure-caption">自动审计系统：四大需求与结构化数据、JSON 对齐子任务</figcaption>
+              </figure>
+            </div>
+            <div class="doc-links-group">
+              <a class="doc-link" href="新素材/Horizontal%20AI%20application/PRD-UIUX%E6%96%87%E6%A1%A3%E6%AF%94%E5%AF%B9%E5%B7%A5%E5%85%B7/%E6%99%BA%E8%83%BD%E7%BA%AA%E8%A6%81%EF%BC%9AFigma%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%8F%8AAI%E5%BA%94%E7%94%A8%E4%BC%9A%E8%AE%AE%202026%E5%B9%B43%E6%9C%8830%E6%97%A5.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>Figma 工作流纪要</a>
+              <a class="doc-link" href="新素材/Horizontal%20AI%20application/PRD-UIUX%E6%96%87%E6%A1%A3%E6%AF%94%E5%AF%B9%E5%B7%A5%E5%85%B7/%E6%99%BA%E8%83%BD%E7%BA%AA%E8%A6%81%EF%BC%9AAI%E6%96%87%E6%A1%A3%E6%AF%94%E5%AF%B9_%E5%86%85%E9%83%A8%E5%9B%A2%E9%98%9F%E4%BA%A4%E6%B5%81%202026%E5%B9%B43%E6%9C%8823%E6%97%A5.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>文档比对团队交流</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 9: 横向 · Hackathon -->
+    <section class="slide slide-readable-media" data-index="9">
+      <div class="slide-inner">
+        <h2 class="section-title">横向：Hackathon 与人才评测</h2>
+        <span class="section-badge">简历筛选 &middot; 人才 365（DeepSeek &times; 飞书 aPaaS）</span>
+
+        <p class="lead-strip">Hackathon：多份简历的结构化初评入口；<strong>人才 365</strong>：面向「<span class="stat-hl">N 岗位 &times; 海量简历</span>」的粗召回 + 细粒度 LLM 评分 + 飞书卡片 / 邮件双通道推送，材料已更新为 PDF 版。</p>
+
+        <div class="kw-strip" aria-label="关键词">
+          <span class="kw-tag">DeepSeek</span>
+          <span class="kw-tag">飞书 aPaaS</span>
+          <span class="kw-tag">JD 关键词抽取</span>
+          <span class="kw-tag">评估维度权重</span>
+          <span class="kw-tag">粗网 API 定时捞池</span>
+          <span class="kw-tag">去重推送</span>
+          <span class="kw-tag">六大模块</span>
+        </div>
+
+        <div class="hackathon-stack">
+          <div class="hackathon-text">
+            <h3>人才 365（晋升材料正文摘要）</h3>
+            <ul class="feature-list">
+              <li>痛点：HR 被动等投递；沉淀池「<strong>数百万级</strong>」人才与多活跃岗位需 <strong>N&times;N</strong> 匹配，飞书人才 360 侧重 <strong>1 岗 1 简历</strong>，难以覆盖海量交叉筛选。</li>
+              <li>方案：<strong>职位发布 &rarr; 智能评估 &rarr; 精准推送</strong>；六大模块（岗位管理、海量大池召回、备选小池、LLM 多维评估、意向邮件、飞书卡片）粗细两层、岗位与人才信息无损流动。</li>
+              <li>Step1：LLM 从 JD 生成检索关键词与评估维度权重（示例：工作年限 <span class="stat-hl">30%</span>、专业 <span class="stat-hl">25%</span>、证书 <span class="stat-hl">20%</span>、项目 <span class="stat-hl">25%</span>），定时粗网 API 捞池并剔除已推送重复。</li>
+              <li>Step2：对粗筛候选人做简历关键信息抽取 + 多维度自然语言打分（如超预期 100 / 符合 80 / 可改进 60 / 不符合 40），加权汇总总分。</li>
+              <li>Step3：阈值与后处理规则（可含硬性条件）；通过后 <strong>飞书卡片推送 HR</strong>、<strong>意向邮件触达候选人</strong>，回复自动转发 HR 邮箱。</li>
+            </ul>
+            <h3>Hackathon</h3>
+            <ul class="feature-list">
+              <li>《AI Hackathon 大赛》<strong>051 简历筛选</strong>材料：统一入口与初评说明。</li>
+            </ul>
+            <div class="result-cards" style="margin-top:12px;">
+              <div class="result-card accent"><div class="result-value">~25.6 万</div><div class="result-label">节省 HR 成本/年（材料测算）</div></div>
+              <div class="result-card"><div class="result-value">~80 万</div><div class="result-label">提前入职创造价值/年（材料测算）</div></div>
+              <div class="result-card"><div class="result-value">&gt;100 万</div><div class="result-label">直接+间接受益（定性）</div></div>
+            </div>
+          </div>
+          <div class="hackathon-media-row">
+            <figure class="figure-block">
+              <img src="interview_assets/selected/sel_hackathon_cover.png" alt="AI Hackathon 简历筛选封面" class="readable-img" />
+              <figcaption class="figure-caption">Hackathon：简历筛选与初评材料入口页</figcaption>
+            </figure>
+            <figure class="figure-block">
+              <img src="interview_assets/selected/sel_talent365_slide.png" alt="人才365 方案与模块示意" class="readable-img" />
+              <figcaption class="figure-caption">人才 365：方案亮点 / 六大模块与流程（摘自晋升材料）</figcaption>
+            </figure>
+          </div>
+          <div class="doc-links-group">
+            <a class="doc-link" href="新素材/Horizontal%20AI%20application/%E8%8E%B7%E5%A5%96%E9%A1%B9%E7%9B%AE%E4%BA%BA%E6%89%8D%20365%EF%BC%8C%E6%99%8B%E5%8D%87%E4%BE%9D%E6%8D%AE/%E3%80%8AAI%20Hackathon%E5%A4%A7%E8%B5%9B%E3%80%8B051%E7%AE%80%E5%8E%86%E7%AD%9B%E9%80%89.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>Hackathon 简历筛选 PDF</a>
+            <a class="doc-link" href="新素材/Horizontal%20AI%20application/%E8%8E%B7%E5%A5%96%E9%A1%B9%E7%9B%AE%E4%BA%BA%E6%89%8D%20365%EF%BC%8C%E6%99%8B%E5%8D%87%E4%BE%9D%E6%8D%AE/022%2B%E4%BA%BA%E6%89%8D365%2B%E5%8D%BF%E5%8D%9A%E6%96%87%200908.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>人才 365 晋升材料 PDF（推荐）</a>
+            <a class="doc-link" href="新素材/Horizontal%20AI%20application/%E8%8E%B7%E5%A5%96%E9%A1%B9%E7%9B%AE%E4%BA%BA%E6%89%8D%20365%EF%BC%8C%E6%99%8B%E5%8D%87%E4%BE%9D%E6%8D%AE/022%2B%E4%BA%BA%E6%89%8D365%2B%E5%8D%BF%E5%8D%9A%E6%96%87%200908.pptx" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>人才 365 pptx</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 10: 横向 · Innovus -->
+    <section class="slide slide-readable-media slide-innovus" data-index="10">
+      <div class="slide-inner">
+        <h2 class="section-title">横向：Innovus Capital（领创资本）</h2>
+        <span class="section-badge">新加坡 2023.8 成立 &middot; AI 证券研究 &middot; 联合创业 / CTO 侧技术交付</span>
+
+        <p class="lead-strip">商业提案（v3.13）定位：<strong>AI 驱动研报</strong>服务超 <span class="stat-hl">10 亿</span> 散户级市场，强调 <span class="stat-hl">30 秒</span> 级生成、单份低至 <span class="stat-hl">S$0.99</span>、成本约 <span class="stat-hl">S$0.025/份</span> 与规模化报告量目标。</p>
+
+        <div class="kw-strip" aria-label="关键词">
+          <span class="kw-tag">实时数据引擎</span>
+          <span class="kw-tag">个性化研报</span>
+          <span class="kw-tag">开放 API</span>
+          <span class="kw-tag">TAM 400 亿 USD+</span>
+          <span class="kw-tag">本地 Qwen 金融分析</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-left">
+            <h3>商业提案正文摘要</h3>
+            <ul class="feature-list">
+              <li>市场：全球证券研报市场规模已标至 <strong>400 亿美元</strong> 量级；提案给出未来三年收入 CAGR 约 <span class="stat-hl">120%</span>、第三年证券研报市场份额目标 <span class="stat-hl">5%</span> 等预测口径（见 PDF 投资摘要页）。</li>
+              <li>产品差异：<strong>30 秒内</strong>输出完整研报；单份 <strong>S$0.99</strong> 定价带；含公司/行业/财务/预期与估值；强调实时更新与可扩展自动化流水线。</li>
+              <li>增长目标（材料列举）：12 个月内约 <span class="stat-hl">30 万</span> 用户、第二年累计约 <span class="stat-hl">500 万</span> 份报告、收购后第五年营收 <span class="stat-hl">S$5M+</span> 等里程碑式表述。</li>
+              <li>交易与合规叙事：100% 股权收购可协商、创始团队技术维护与运营支持承诺、EP&rarr;PR 路径说明等（以 PDF 为准）。</li>
+            </ul>
+            <h3>工程与数据侧（与你的角色衔接）</h3>
+            <ul class="feature-list">
+              <li>本地 <strong>Qwen3:7B</strong> 金融分析降低外部 API 依赖；<strong>Finhub / YFinance</strong> 等美股数据接入；舆情、量化与结构化研报流水线设计。</li>
+            </ul>
+            <div class="result-cards" style="margin-top:12px;">
+              <div class="result-card accent"><div class="result-value">30s</div><div class="result-label">AI 研报生成（材料）</div></div>
+              <div class="result-card"><div class="result-value">S$0.99</div><div class="result-label">单份定价带（材料）</div></div>
+              <div class="result-card"><div class="result-value">~120%</div><div class="result-label">三年 CAGR（材料）</div></div>
+            </div>
+          </div>
+          <div class="col-right innovus-gallery">
+            <figure class="figure-block innovus-hero">
+              <img src="interview_assets/selected/sel_innovus_proposal_exec.png" alt="商业提案执行摘要与核心数字" class="readable-img" />
+              <figcaption class="figure-caption">商业提案 v3.13：投资摘要与核心数字（节选导出）</figcaption>
+            </figure>
+            <div class="innovus-pair">
+              <figure class="figure-block">
+                <img src="interview_assets/selected/sel_innovus_equity_structure.png" alt="Innovus 股权与管理架构" class="readable-img" />
+                <figcaption class="figure-caption">股权与管理架构：投资人、管理公司与外部服务商协作</figcaption>
+              </figure>
+              <figure class="figure-block innovus-report-pane">
+                <div class="innovus-report-scroll">
+                  <img src="interview_assets/selected/sel_equity_research_sample.png" alt="权益研报版式样例" class="innovus-report-img" />
+                </div>
+                <figcaption class="figure-caption">结构化权益研报样例（Verizon 公开样例）— 框内可滚动查看正文</figcaption>
+              </figure>
+            </div>
+            <div class="doc-links-group">
+              <a class="doc-link" href="新素材/Innovus%20capital%20%E5%88%9B%E4%B8%9A/%E5%95%86%E4%B8%9A%E6%8F%90%E6%A1%88%20v3.13.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>商业提案 v3.13.pdf（推荐）</a>
+              <a class="doc-link" href="新素材/Innovus%20capital%20%E5%88%9B%E4%B8%9A/%E6%8B%9B%E5%95%86PPT.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>招商 PPT.pdf</a>
+              <a class="doc-link" href="新素材/Innovus%20capital%20%E5%88%9B%E4%B8%9A/%E6%83%B3%E6%B3%95.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>想法.pdf</a>
+              <a class="doc-link" href="新素材/Innovus%20capital%20%E5%88%9B%E4%B8%9A/SAMPLE%20Equity%20Research%20Report%20on%20Verizon.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>研报范式样例（Verizon）</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 11: 历史 · 硕士毕设 -->
+    <section class="slide slide-readable-media" data-index="11">
+      <div class="slide-inner">
+        <h2 class="section-title">历史项目：硕士毕设（NTU）</h2>
+        <span class="section-badge">AIGC &middot; 自动驾驶异常数据增强 &middot; Final Sharing</span>
+
+        <p class="lead-strip">面向自动驾驶感知与仿真：利用生成式模型对稀有、危险或难采集场景做数据增强，缓解长尾与标注成本问题；与 CARLA 仿真及感知管线结合。</p>
+        <div class="kw-strip">
+          <span class="kw-tag">Stable Diffusion</span>
+          <span class="kw-tag">LoRA</span>
+          <span class="kw-tag">ControlNet</span>
+          <span class="kw-tag">Segment Anything</span>
+          <span class="kw-tag">CARLA</span>
+          <span class="kw-tag">GAN / Diffusion</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-left">
+            <h3>方法与实验</h3>
+            <ul class="feature-list">
+              <li><strong>生成主干</strong>：以 <strong>Stable Diffusion</strong> 为核心，配合 <strong>LoRA</strong> 做领域适配；用 <strong>ControlNet（Canny / 深度等）</strong> 把<strong>道路几何与障碍物轮廓</strong>编码为条件，缓解纯 <strong>Text2Img</strong> 的<strong>不可控</strong>与伪影。</li>
+              <li><strong>区域约束</strong>：<strong>Segment Anything（SAM）</strong> 或同类分割给出<strong>可编辑掩码</strong>，只在<strong>关心区域</strong>内做增强，减少对背景建筑的无关改动，便于下游<strong>感知一致性</strong>检查。</li>
+              <li><strong>仿真数据</strong>：在 <strong>CARLA</strong> 中采集多天气 / 多光照的 <strong>BEV / 前视</strong> 序列，对稀有类别（如 <strong>Cyclist</strong>）做实例级增广，并与<strong>标注格式</strong>对齐以便回灌训练。</li>
+              <li><strong>路线对比</strong>：对比 <strong>Img2Img</strong> 引导与仅 <strong>Text2Img</strong> 在<strong>可控性、细节质量、训练稳定性</strong>上的差异；分享稿中给出<strong>同 prompt 可视化</strong>与失败样例分析。</li>
+              <li><strong>评价思路</strong>：除主观观感外，关注 <strong>FID / LPIPS</strong> 等图像指标与下游检测器<strong>AP 变化</strong>（若管线允许），避免「生成好看但感知变坏」。</li>
+            </ul>
+            <div class="result-cards" style="margin-top:16px;flex-wrap:wrap;">
+              <div class="result-card accent"><div class="result-value">6V5R</div><div class="result-label">融合感知数据采集语境</div></div>
+              <div class="result-card"><div class="result-value">Cyclist</div><div class="result-label">8 类 &times; 10 实例级增强场景</div></div>
+            </div>
+          </div>
+          <div class="col-right">
+            <figure class="figure-block">
+              <img src="interview_assets/selected/sel_master_sd_compare.png" alt="Stable Diffusion 文生图与图生图对比" class="slide-image readable-img" />
+              <figcaption class="figure-caption">生成式路线对比：仅 Text2Img 与 Img2Img 引导下的可控性与可用性（毕设分享稿）</figcaption>
+            </figure>
+            <div class="doc-links-group">
+              <a class="doc-link" href="新素材/Master%E2%80%99s%20Project%20%E7%A1%95%E5%A3%AB%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/stage%20sharing.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>stage sharing.pdf</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 12: 历史 · 校企世界模型 -->
+    <section class="slide slide-readable-media" data-index="12">
+      <div class="slide-inner">
+        <h2 class="section-title">历史项目：校企 · 生成式世界模型</h2>
+        <span class="section-badge">德赛 &times; NTU / 中大 &middot; DriveArena 类双核</span>
+
+        <p class="lead-strip">目标：高保真交通场景仿真与生成数据，提升感知并支撑闭环测试；周期约 <span class="stat-hl">6 个月</span>，分月检查点。验收侧：德赛数据集 3D 检测 / 车道线「仅生成数据」平均提升 <span class="stat-hl">约 4%</span>；NuScenes Occ 任务平均提升 <span class="stat-hl">约 10%</span> 以体现跨数据集泛化。</p>
+        <div class="kw-strip">
+          <span class="kw-tag">Traffic Manager</span>
+          <span class="kw-tag">Diffusion 渲染</span>
+          <span class="kw-tag">OSM</span>
+          <span class="kw-tag">BEV</span>
+          <span class="kw-tag">长尾场景 LLM</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-left">
+            <h3>架构与分工</h3>
+            <ul class="feature-list">
+              <li><strong>双核思路</strong>：<strong>交通管理器（Traffic Manager）</strong> 负责 <strong>OSM / 路网</strong>、<strong>动静态参与者</strong>与交互逻辑，为生成提供结构化条件；<strong>扩散渲染器</strong> 负责 <strong>多视角 RGB</strong> 与 <strong>BEV</strong> 的高保真输出，贴近 <strong>DriveArena</strong> 类方案。</li>
+              <li><strong>与端到端自驾衔接</strong>：世界模型作为<strong>闭环验证</strong>的一环，接收控车信号预测未来帧，用于<strong>碰撞率</strong>、<strong>场景覆盖率</strong>等指标，而非单点「好看视频」demo。</li>
+              <li><strong>TRD 评审要点</strong>：材料中归纳 <strong>市场机会</strong>（高保真仿真需求）、<strong>现有工具链不足</strong>（如 <strong>CARLA</strong> 真实感 / 多样性）、以及 <strong>NeRF-only / Diffusion-only</strong> 路线的局限，引出<strong>混合技术路线</strong>。</li>
+              <li><strong>NTU 侧重</strong>：交通管理器优化、<strong>长尾场景</strong> 与 <strong>LLM 场景编辑</strong>（自然语言改场景参数）。</li>
+              <li><strong>中大侧重</strong>：渲染质量与感知增益，材料中给出德赛数据集 <strong>3D 检测 / 车道</strong> 仅用生成数据平均约 <span class="stat-hl">+4%</span>、<strong>NuScenes Occ</strong> 约 <span class="stat-hl">+10%</span> 等<strong>验收型表述</strong>，并覆盖 <span class="stat-hl">≥10</span> 类未充分覆盖场景与<strong>标注 / 闭环集成</strong>。</li>
+            </ul>
+          </div>
+          <div class="col-right ue-figure-stack">
+            <figure class="figure-block">
+              <img src="interview_assets/selected/sel_uec_plan.png" alt="世界模型开发计划" class="slide-image readable-img" />
+              <figcaption class="figure-caption">开发计划：进度、验收指标与双核分工摘要</figcaption>
+            </figure>
+            <figure class="figure-block">
+              <img src="interview_assets/selected/sel_uec_flow_phase.png" alt="世界模型阶段流程" class="slide-image readable-img" />
+              <figcaption class="figure-caption">三阶段流程总览（流程图稿）</figcaption>
+            </figure>
+            <figure class="figure-block">
+              <img src="interview_assets/selected/sel_uec_trd_slide.png" alt="世界模型技术规划评审" class="slide-image readable-img" />
+              <figcaption class="figure-caption">技术规划评审：课题背景、需求与市场机会（节选页）</figcaption>
+            </figure>
+            <div class="doc-links-group">
+              <a class="doc-link" href="新素材/University-Enterprise-Collaborate%20project/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E5%BC%80%E5%8F%91%E8%AE%A1%E5%88%92.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>世界模型开发计划.pdf</a>
+              <a class="doc-link" href="新素材/University-Enterprise-Collaborate%20project/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E6%B5%81%E7%A8%8B%E5%9B%BE.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>世界模型流程图.pdf</a>
+              <a class="doc-link" href="新素材/University-Enterprise-Collaborate%20project/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF%E8%A7%84%E5%88%92%E8%AF%84%E5%AE%A1.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>世界模型技术规划评审.pdf</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 13: 历史 · Legacy BEV -->
+    <section class="slide slide-readable-media slide-legacy-bev" data-index="13">
+      <div class="slide-inner">
+        <h2 class="section-title">历史项目：BEV 预标与感知（Legacy）</h2>
+        <span class="section-badge">2024.04 &ndash; 2025.03</span>
+
+        <p class="lead-strip">行车底图预标与 BEV 感知：<span class="stat-hl">GeMap / VMA</span> 路线，自定义 <strong>Point2Line</strong> 等损失；流式 2D 裁剪支撑 <span class="stat-hl">16k&times;8k</span> 级地图；<span class="stat-hl">DeepSpeed</span> 多卡流水线与 RGB+LiDAR 融合实验。</p>
+        <div class="kw-strip">
+          <span class="kw-tag">BEV</span>
+          <span class="kw-tag">Chamfer mAP</span>
+          <span class="kw-tag">流式增广</span>
+          <span class="kw-tag">LiDAR 融合</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-left">
+            <h3>技术要点</h3>
+            <ul class="feature-list">
+              <li><strong>BEV 预标</strong>：在 <strong>GeMap / VMA</strong> 路线下做车道与底图要素检测；自定义 <strong>Point2Line</strong> 等损失拉近预测折线与真值<strong>拓扑</strong>，兼顾<strong>Chamfer 类指标</strong>与业务可解释性。</li>
+              <li><strong>流式增广</strong>：对超大分辨率底图（<strong>16k&times;8k</strong> 量级）采用 <strong>2D 裁剪流式读取</strong>，在同等 batch 下显存约 <span class="stat-hl">&minus;40%</span>，支撑更长训练迭代。</li>
+              <li><strong>分布式训练</strong>：<strong>DeepSpeed</strong> 多卡流水线、梯度累积与<strong>混合精度</strong>；分别跟踪 <strong>车道线 / 道路边界 / 停止线</strong> 等子任务的验证 <strong>mAP</strong> 曲线，定位<strong>过拟合 / 域偏移</strong>。</li>
+              <li><strong>多传感器</strong>：<strong>RGB + LiDAR 强度</strong> 融合实验，表格化输出 <strong>Recall / Precision / F1@阈值</strong>，对比<strong>仅视觉</strong>与<strong>融合</strong>在雨雾等场景的增益。</li>
+              <li><strong>交付习惯</strong>：实验记录 PDF + Weekly Update 固定<strong>超参、数据版本、指标表</strong>，便于半年后回溯。</li>
+            </ul>
+          </div>
+          <div class="col-right">
+            <figure class="figure-block">
+              <div class="legacy-chart-scroll" role="region" aria-label="训练曲线大图，可横向拖动">
+                <img src="interview_assets/selected/sel_bev_train_curves.png" alt="BEV 训练与验证曲线组" class="legacy-chart-img" />
+              </div>
+              <figcaption class="figure-caption">BEV 预标模型：训练损失与验证集车道线/边界/停止线 AP 曲线（横向拖动查看细节）</figcaption>
+            </figure>
+            <div class="legacy-subfigures">
+              <figure class="figure-block">
+                <img src="interview_assets/selected/sel_bev_eval_metrics.png" alt="Recall Precision F1 指标表" class="readable-img" />
+                <figcaption class="figure-caption">底图预标模型：样本点 Recall / Precision / F1@10</figcaption>
+              </figure>
+              <figure class="figure-block">
+                <img src="interview_assets/selected/sel_lidar_camera_fusion.png" alt="鱼眼与点云投影融合效果" class="readable-img" />
+                <figcaption class="figure-caption">鱼眼相机与 LiDAR 点云投影融合示意</figcaption>
+              </figure>
+            </div>
+            <div class="doc-links-group">
+              <a class="doc-link" href="新素材/Legacy%20CV%20perception%20project/%E8%A1%8C%E8%BD%A6%E5%BA%95%E5%9B%BE%E9%A2%84%E6%A0%87%E6%A8%A1%E5%9E%8B%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>行车底图实验记录</a>
+              <a class="doc-link" href="新素材/Legacy%20CV%20perception%20project/Weekly%20Progress%20Update%20-%20Bowen.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>Weekly Progress Update</a>
+              <a class="doc-link" href="新素材/Legacy CV perception project/AI notes_ 路面元素检测模型技术分享 on Mar 18, 2025.pdf" target="_blank" rel="noopener"><span class="link-icon">&#128196;</span>路面元素检测技术分享</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-cards">
+          <div class="result-card"><div class="result-value">&minus;40%</div><div class="result-label">显存（流式增广）</div></div>
+          <div class="result-card accent"><div class="result-value">+7%</div><div class="result-label">检测 mAP 提升</div></div>
+          <div class="result-card"><div class="result-value">+5%</div><div class="result-label">稀有标志召回</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 14: Closing -->
+    <section class="slide slide-summary" data-index="14">
+      <div class="slide-inner">
+        <h2 class="section-title">总结</h2>
+
+        <div class="summary-grid">
+          <div class="summary-card">
+            <div class="summary-icon">&#128202;</div>
+            <h3>评测与数据</h3>
+            <p>NLU 分布与量化对齐、VLM 数据闭环、内部 Agent 与 Hackathon；人才 365 的 N&times;N 匹配与商业材料中的可量化目标（Innovus、校企验收等）。</p>
+          </div>
+          <div class="summary-card">
+            <div class="summary-icon">&#128736;</div>
+            <h3>系统工程</h3>
+            <p>端侧 QNN、vLLM 服务、GPU 运维与跨团队交付，在成本、时延与可维护性之间取舍。</p>
+          </div>
+          <div class="summary-card">
+            <div class="summary-icon">&#128640;</div>
+            <h3>座舱与感知</h3>
+            <p>DMS 多层级架构、BEV 预标与多传感器融合，覆盖舱内与行车两条视觉主线。</p>
+          </div>
+          <div class="summary-card">
+            <div class="summary-icon">&#128172;</div>
+            <h3>延伸方向</h3>
+            <p>多轮工具型 Agent 强化学习、评测平台化、开源 Code Agent（Lumen）的持续迭代。</p>
+          </div>
+        </div>
+
+        <div class="thanks">
+          <p>谢谢 · 欢迎交流</p>
+        </div>
+
+        <div style="margin-top:16px;text-align:center;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+          <a class="doc-link" href="新素材/QING_Bowen_CV_LLM_0402.pdf" target="_blank" rel="noopener">简历</a>
+          <a class="doc-link" href="新素材/Bowen‘s Promotion Statement .pdf" target="_blank" rel="noopener">Promotion Statement</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="keyboard-hint" id="keyboardHint">
+    <span>&larr; &rarr; 切换页面 &middot; 滚轮上下浏览内容</span>
+  </div>
+
+  <div class="page-indicator" id="pageIndicator">1 / 15</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
