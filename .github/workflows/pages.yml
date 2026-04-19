@@ -1,0 +1,45 @@
+# 在仓库 Settings → Pages → Build and deployment 中选择「GitHub Actions」后使用本工作流。
+# 若 Actions 持续失败，可改回「Deploy from a branch」仅用 main 根目录，不经过 artifact。
+
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout（含 Git LFS，避免大 PDF 仅为指针）
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
