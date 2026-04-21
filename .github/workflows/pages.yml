@@ -35,10 +35,20 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare site artifact（排除本地虚拟环境等非站点内容）
+        run: |
+          mkdir -p _site
+          rsync -a ./ ./_site/ \
+            --exclude ".git/" \
+            --exclude ".github/" \
+            --exclude ".venv_pdf/" \
+            --exclude "__pycache__/" \
+            --exclude "*.pyc"
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: "./_site"
 
       - name: Deploy to GitHub Pages
         id: deployment

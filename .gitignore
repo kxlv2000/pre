@@ -2,3 +2,6 @@
 Thumbs.db
 *.log
 ~$*
+.venv/
+.venv_pdf/
+venv/
